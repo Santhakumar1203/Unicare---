@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #f0f4ff);
+    color: #333;
+  }
+  
+  header {
+    background: #004aad;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: yellow;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .intro {
+    text-align: center;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #004aad;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li a {
+    display: block;
+    padding: 10px;
+    background: #e0f0ff;
+    margin-bottom: 10px;
+    color: #004aad;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #004aad;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .logo {
+    width: 130px;
+    height: auto;
+  }
+  
+  .site-title {
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+    color: white;
+  }
+  
+  .button:hover {
+    background-color: #003080;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .intro {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  li a:hover {
+    background: #cde6ff;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  body::before {
+    content: "";
+    background: url('Unimap\ BG.jpg') no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15; /* Adjust opacity here */
+    z-index: -1;
+  }
+
+  .hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('welfare-bg.jpg') no-repeat center center/cover;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+  }
+  
+  .hero-content {
+    position: relative;
+    color: white;
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    background: #ffd700;
+    color: #004aad;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .hero button:hover {
+    background: #ffc300;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 60px 30px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 24px rgba(0,0,0,0.15);
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+  }
+
+  .visitor-buttons {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .visitor-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .visitor-button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .visitor-button:hover {
+    background-color: #002e6b;
+  }
+
+  .welfare-items {
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .welfare-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0f0ff;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .welfare-name {
+    font-size: 1rem;
+    color: #004aad;
+  }
+  
+  .apply-box {
+    background-color: #004aad;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .apply-box:hover {
+    background-color: #003080;
+  }
+
+  .pdf-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #0066cc;
+  text-decoration: underline;
+  font-weight: bold;
+}
